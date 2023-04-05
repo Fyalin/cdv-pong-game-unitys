@@ -20,12 +20,12 @@ public class MoveCube2d : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(upKey) && transform.position.y < 4)
+        if (Input.GetKey(upKey) && transform.position.y < 5.68)
         {
             rigidbody2D.velocity = Vector2.up * speed ;
 
         }
-        else if (Input.GetKey(downKey) && transform.position.y > -4 )
+        else if (Input.GetKey(downKey) && transform.position.y > -2 )
         {
             rigidbody2D.velocity = Vector2.down * speed ;
         }
